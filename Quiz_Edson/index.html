@@ -11,24 +11,30 @@
     <div class="display-container">
         <div class="header">
             <div class="number-question">
-                <span class="number-of-question">1 de ...</span>
+                <p class="number-of-question">1 de <span id="questoesRespondidas">...</span></p>
             </div>
             <form class="quantity">
                 <h3>Nota</h3>
-                <h4>0</h4>
+                <h4></h4>
             </form>
             <div class="timer-div">
                 <img src="https://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png" width="20px" />
                 <span class="time-left">10s</span>
             </div>
         </div>
-        <div class="question-container">
-            <h3 class="question-title">quanto é 7 x 6?</h3>
+        <div class="startButton">
+            <button id="btnStart">Começar</button>
+        </div>
+        <div class="question-container deactive" id="questionContainer">
+            <h3 class="question-title">quanto é <span id="valor">7</span> x <span id="multiplicador">6</span>?</h3>
             <button class="option-div" onclick="checker(this)">7</button>
             <button class="option-div" onclick="checker(this)">7</button>
             <button class="option-div" onclick="checker(this)">7</button>
             <button class="option-div" onclick="checker(this)">7</button>
             <button class="option-div" onclick="checker(this)">7</button>
+        </div>
+        <div class="startButton">
+            <button class="deactive" id="btnStop">Parar</button>
         </div>
     </div>
     <script src="script_tabuada.js"></script>
